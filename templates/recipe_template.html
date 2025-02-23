@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f8f8f8; color: #333; }
+        .container { width: 8.5in; margin: auto; padding: 20px; background: white; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        h1, h2 { text-align: center; color: #2c3e50; }
+        .ingredients { column-count: auto; column-width: 250px; }
+        .steps-container { display: flex; flex-wrap: wrap; gap: 5px; justify-content: space-between; }
+        .step-group { display: flex; width: 100%; align-items: center; }
+        .step-label { writing-mode: vertical-rl; text-align: center; padding: 10px; font-weight: bold; font-size: 16px; color: #2c3e50; transform: rotate(180deg); }
+        .step-box { border: 1px solid #ccc; padding: 10px; margin: 5px; background: #ecf0f1; border-radius: 5px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .step-title { display: flex; justify-content: space-between; font-weight: bold; color: #2980b9; }
+        .step-group .step-box { flex: 1; display: flex; flex-direction: column; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <p style="text-align: center; color: #7f8c8d;">{{ description }}</p>
+        
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+            {% for name, quantity in ingredients %}
+            <li><strong>{{ name }}</strong> – {{ quantity }}</li>
+            {% endfor %}
+        </ul>
+        
+        <h2>Steps</h2>
+        <div class="steps-container">
+            {% for position, steps in steps_grouped.items() %}
+                <div class="step-group">
+                    <div class="step-label">Step {{ position }}</div>
+                    <div style="display: flex; width: 100%;">
+                        {% for step in steps %}
+                        <div class="step-box">
+                            <div class="step-title">
+                                <span>{{ step.step_name }}</span>
+                                <span>({{ step.step_type }}, {{ step.estimated_time }})</span>
+                            </div>
+                            {% if step.step_ingredients %}
+                            <p><strong>Ingredients:</strong> 
+                                {% for ing in step.step_ingredients %} 
+                                    {{ ing.name }} ({{ ing.quantity }}){% if not loop.last %}, {% endif %} 
+                                {% endfor %}
+                            </p>
+                            {% endif %}
+                            <p>{{ step.step_description }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

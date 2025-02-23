@@ -1,0 +1,73 @@
+{
+    "name": "Batter-Dipped Fried Cauliflower",
+    "description": "A fried cauliflower meal fit as an appitizer or main course.",
+    "steps": [
+      {
+        "step_name": "Chop Cauliflower & Heat Oil",
+        "step_position": 1,
+        "step_type": "prep",
+        "estimated_time": "5 minutes",
+        "step_description": "Rinse cauliflower then remove florets and discard stem. Preheat fryer oil to 375 (F).",
+        "step_ingredients": [
+          { "name": "cauliflower", "quantity": "1 head" },
+          { "name": "high smoke-point oil", "quantity": "2 to 3 inches" }
+        ]
+      },
+      {
+        "step_name":"Prepare Wet Batter",
+        "step_position": 2,
+        "step_type": "prep",
+        "estimated_time": "3 minutes",
+        "step_description": "In a bowl or bag add eggs, milk and salt. Stir/beat to combine.",
+        "step_ingredients":[
+          {"name": "eggs", "quantity": "2 beaten"},
+          {"name": "milk", "quantity": "1 tablespoon"},
+          {"name": "salt", "quantity": "1/4 teaspoon"}
+        ]
+      },
+      {
+        "step_name":"Prepare Dry Batter",
+        "step_position": 2,
+        "step_type": "prep",
+        "estimated_time": "3 minutes",
+        "step_description": "In another bowl or bag mix together flour, cheese and spices.",
+        "step_ingredients":[
+          {"name": "coarse-grain flour", "quantity": "1 & 1/2 cups"},
+          {"name": "grated parmesan", "quantity": "2 tablespoons"},
+          {"name": "garlic poweder", "quantity": "1/4 teaspoon"},
+          {"name": "thyme", "quantity": "1/2 teaspoon"},
+          {"name": "oregano", "quantity": "1 teaspoon"},
+          {"name": "smoked paprika", "quantity": "1/8 teaspoon"},
+          {"name": "cayenne", "quantity": "to taste"},
+          {"name": "pepper", "quantity": "1/4 teaspoon"}
+        ]
+      },
+      {
+        "step_name":"Coat Cauliflower",
+        "step_position": 3,
+        "step_type": "prep",
+        "estimated_time": "10 minutes",
+        "step_description": "Coat florets in wet then dry batter ingredients making sure to cover fully"
+      },
+      {
+        "step_name":"Fry Cauliflower",
+        "step_position": 3,
+        "step_type": "cook",
+        "estimated_time": "20 minutes",
+        "step_description": "Placed battered florets carefully in preheated oil in batches for 4-6 minutes or until golden brown. Drain/dry on wire rack or paper towel lined tray."
+      },
+      {
+        "step_name":"Finish Cauliflower",
+        "step_position": 4,
+        "step_type": "combine",
+        "estimated_time": "2 minutes",
+        "step_description": "Toss florets in sauce of choice and serve with ranch/bleu cheese and carrots/celery.",
+        "step_ingredients":[
+          {"name": "tossing sauce", "quantity": "dealers choice"},
+          {"name": "dipping sauce", "quantity": "ranch/bleu cheese"},
+          {"name": "hor d'oeuvres", "quantity": "matchstick carrots/celery"}
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Recipe",
+    "description": "Template for building an recipe JSON file.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of the recipe"
+        },
+        "description": {
+            "type": "string",
+            "description": "Brief description of the recipe"
+        },
+        "steps": {
+            "type": "array",
+            "description": "Ordered steps for the recipe",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "step_name": {
+                        "type": "string",
+                        "description": "Name of the step"
+                    },
+                    "step_position": {
+                        "type": "integer",
+                        "description": "Order in which the step occurs; steps with the same number happen simultaneously"
+                    },
+                    "step_type": {
+                        "type": "string",
+                        "enum": [
+                            "prep",
+                            "cook",
+                            "combine"
+                        ],
+                        "description": "Type of step: prep, cook, or combine"
+                    },
+                    "estimated_time": {
+                        "type": "string",
+                        "description": "Estimated time to complete this step"
+                    },
+                    "step_description": {
+                        "type": "string",
+                        "description": "Detailed description of what to do"
+                    },
+                    "step_ingredients": {
+                        "type": "array",
+                        "description": "Ingredients used in this step",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "Ingredient name"
+                                },
+                                "quantity": {
+                                    "type": "string",
+                                    "description": "Quantity and unit"
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "quantity"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "step_name",
+                    "step_position",
+                    "step_type",
+                    "step_description"
+                ]
+            }
+        }
+    },
+    "required": [
+        "name",
+        "description",
+        "steps"
+    ]
+}
