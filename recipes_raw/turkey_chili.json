@@ -1,0 +1,76 @@
+{
+    "name": "Turkey Chili",
+    "description": "Simple chili recipe. Serves well with corn bread or tortilla chips. Top with sliced jalapeno, sour cream, and cheese.",
+    "steps": [
+      {
+        "step_name": "Prepare Raw Ingredients",
+        "step_position": 1,
+        "step_type": "prep",
+        "estimated_time": "10 minutes",
+        "step_description": "Prepare raw ingredients for later addition to chili.",
+        "step_ingredients": [
+          { "name": "sweet potato", "quantity": "1 med. diced" },
+          { "name": "yellow onion", "quantity": "1 med. diced" },
+          { "name": "bell pepper", "quantity": "1 med. chopped" },
+          { "name": "fresh garlic", "quantity": "3 cloves minced" }
+        ]
+      },
+      {
+        "step_name": "Preheat Large Pot",
+        "step_position": 1,
+        "step_type": "prep",
+        "estimated_time": "5 minutes",
+        "step_description": "Preheart a large, oiled pot on medium heat.",
+        "step_ingredients": [
+          { "name": "olive oil", "quantity": "1/2 tablespoon" }
+        ]
+      },
+      {
+        "step_name": "Saute Aromatics",
+        "step_position": 2,
+        "step_type": "cook",
+        "estimated_time": "5-8 minutes",
+        "step_description": "Add raw ingredients (onion, potato, pepper & garlic) to preheated pot and saute until fragrant."
+      },
+      {
+        "step_name": "Season Chili Base",
+        "step_position": 3,
+        "step_type": "combine",
+        "estimated_time": "5 minutes",
+        "step_description": "Add seasonings to pot and stir.",
+        "step_ingredients": [
+          { "name": "chili powder", "quantity": "to taste (1-4 tablespoons)" },
+          { "name": "cumin", "quantity": "2 teaspoons" },
+          { "name": "oregano", "quantity": "1 teaspoon" },
+          { "name": "cayenne pepper", "quantity": "1/4 teaspoon" },
+          { "name": "salt", "quantity": "1/2 teaspoon" },
+          { "name": "black pepper", "quantity": "1/2 teaspoon" }
+        ]
+      },
+      {
+        "step_name": "Add Turkey",
+        "step_position": 3,
+        "step_type": "cook",
+        "estimated_time": "10 minutes",
+        "step_description": "Add turkey (or ground substitute) to pot. Cook until no pink/red remains.",
+        "step_ingredients": [
+          { "name": "ground turkey", "quantity": "1 lb" }
+        ]
+      },
+      {
+        "step_name": "Final Additions and Reduction",
+        "step_position": 4,
+        "step_type": "cook",
+        "estimated_time": "40-50 minutes",
+        "step_description": "Add final ingredients. Bring pot to a boil then reduce heat to simmer and cover. Cook until reduced/thickened.",
+        "step_ingredients": [
+          { "name": "crushed tomatoes", "quantity": "28oz can" },
+          { "name": "chicken/veggie broth", "quantity": "1 1/4 cups" },
+          { "name": "kidney beans", "quantity": "15 oz can" },
+          { "name": "black beans", "quantity": "15 oz can" },
+          { "name": "sweet corn", "quantity": "15 oz can" }
+        ]
+      }
+    ]
+  }
+  
